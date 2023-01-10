@@ -1,0 +1,446 @@
+body {
+    /* background: url("img/background.svg") fixed top no-repeat; */
+    background-size: cover;
+}
+
+.navImg{
+    width:50px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+/* 介紹 */
+main {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+main aside {
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside h2 {
+    margin-left: 5px;
+    margin-top: 40px;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 40px;
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+aside ul li {
+    margin: 20px 0;
+}
+
+aside ul li a {
+    color: #222;
+    font-weight: 700;
+    padding-left: 10px;
+    border-left: 3px solid transparent;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    border-left: 3px solid #0063AD;
+}
+
+.intro {
+    width: 65%;
+    margin-bottom: 100px;
+    
+    margin-top: 70px;
+}
+
+.intro figure {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.intro figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.intro-top {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.intro-name {
+    margin-left: 50px;
+}
+
+.intro-top div h3 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.intro-top div .min {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.intro-top div p {
+    margin-left: 5px;
+    margin: 20px 0;
+    color: #555;
+}
+
+
+.intro-quote {
+    font-size: 2em;
+    font-weight: 700;
+    border-left: 3px solid #0063AD;
+    padding-left: 10px;
+    margin-bottom: 50px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+
+.intro-quote p {
+    margin: 20px 0;
+    line-height: 1;
+}
+
+
+
+/* Hero-02區-Kiki's three "firsts" */
+.firsts {
+    background: #111;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.firsts h3,
+.partners h3 {
+    font-size: 3em;
+    font-weight: 500;
+
+}
+
+.firsts h4,
+.partners h4 {
+    margin: 10px 0;
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.firsts p {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+.timeline-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.timeline {
+    width: 600px;
+}
+
+
+.timeline ul {
+    margin-left: 50px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+
+.timeline ul li {
+    padding: 15px 50px;
+    text-indent: -14px;
+    cursor: pointer;
+}
+
+.timeline ul li:hover {
+    background: #444;
+}
+
+.timeline .dot {
+    font-size: 4px;
+    margin-right: 10px;
+}
+
+.timeline ul li:hover .dot {
+    color: #0063AD;
+    background: #444;
+
+}
+
+.timeline .dot.active {
+    color: #0063AD;
+}
+
+
+.timeline-card {
+    width: 60%;
+    min-width: 250px;
+    height: 380px;
+    background-color: #ccc;
+    transition: height .5s;
+    overflow: hidden;
+    position: relative;
+    margin-left: 80px;
+
+}
+
+
+.timeline-card.active {
+    width: 60%;
+    height: 480px;
+    background-color: #ccc;
+    padding: 0 25px;
+    border-radius: 8px;
+    transition: height .5s;
+
+}
+
+.btn-leave {
+    color: #000;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 200;
+    color: #fff;
+    transition: .5s;
+
+}
+
+.btn-leave.active {
+    border: 2px solid #000;
+    color: #000;
+}
+
+
+
+.card-container {
+    color: #000;
+}
+
+.card-content {
+    display: none;
+    transition: 1s;
+    padding: 10px;
+}
+
+.card-content.default {
+    font-weight: 600;
+    background: url("../img/p2-kiki.gif") top center no-repeat;
+    background-position: cover;
+    background-size: 100%;
+    height: 380px;
+    text-align: right;
+    padding-right: 70px;
+    padding-top: 25px;
+    color: #fff;
+}
+
+.card-content h4 {
+    letter-spacing: 2px;
+    font-size: 2em;
+    color: #0063AD
+}
+
+.card-content.active {
+    display: block;
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+.partners {
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.partners div {
+    justify-content: space-around;
+
+}
+
+.backTop .fa-angle-up {
+    color: #fff;
+}
+
+
+.backTop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: rgba(77, 77, 77, 0.4);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.backTop.active {
+    opacity: 1;
+}
+
+.btn {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.btn img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.modal-body img {
+    margin: 10px;
+}
+
+footer p{
+    background-color: rgba(0, 0, 0, 0.75);
+    color:white;
+    text-align:center;
+}
+
+@media (max-width: 1000px) {
+    .navImg{
+    margin-left: 35px;
+    margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 50px;
+    }
+
+    .navImg{
+        margin-left: 15px;
+        margin-right: 10px;
+        }
+
+    main {
+        flex-direction: column;
+    }
+
+    main aside {
+        text-align: center;
+        width: 100%;
+    }
+
+    aside ul {
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    aside ul li {
+        display: inline-block;
+        padding: 0;
+
+    }
+
+    aside ul li a {
+        padding: 0 10px;
+        border-bottom: 3px solid transparent;
+        border-left: 0;
+    }
+
+    aside ul li a:hover {
+
+        border-bottom: 3px solid #0063AD;
+        border-left: 0;
+
+    }
+
+    .intro {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .intro-top {
+        flex-direction: column;
+    }
+
+    .intro-top div p {
+        text-align: center;
+    }
+
+    .intro-top div {
+        margin-left: -24px !important;
+    }
+
+    .timeline-section {
+        flex-direction: column-reverse;
+    }
+
+    .timeline {
+        width: 100%
+    }
+
+    .timeline ul {
+        margin: 0;
+        margin-right: 20px;
+    }
+
+
+    .timeline-card {
+        width: 90%;
+        height: 200px;
+        background-color: #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        margin: 20px 0;
+
+    }
+
+
+    .timeline-card.active {
+        min-height: 400px;
+        width: 90%;
+
+    }
+
+
+}

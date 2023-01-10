@@ -1,0 +1,51 @@
+.navImg{
+    width:50px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+#hero{
+    position: relative;
+}
+
+#hero_text h1 {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 50px;
+    color: white;
+    top:50px;
+    left: 50px;
+}
+
+
+footer p{
+    background-color: rgba(0, 0, 0, 0.75);
+    color:white;
+    text-align:center;
+}
+
+@media (max-width: 1000px) {
+    .navImg{
+    margin-left: 35px;
+    margin-right: 10px;
+    }
+
+    #hero_text h1 {
+    font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        padding-top: 50px;
+    }
+
+    .navImg{
+    margin-left: 15px;
+    margin-right: 10px;
+    }
+    #hero_text h1 {
+    font-size: 30px;
+    }
+}

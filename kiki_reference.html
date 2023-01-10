@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kiki_r.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9d96d988db.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Kiki's Delivery Service_Reference</title>
+</head>
+
+<body style="padding-top: 35px;">
+    <div class="container-fluid" style="margin: 0;padding:0;">
+        <!-- nav區start -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+
+            <div class="container-fluid" style="margin: 0;padding:0;">
+                <a class="navbar-brand" href="kiki_index.html"><img class="navImg" src="img/nav_01.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar1">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">About</a>
+                            <div class="dropdown-menu">
+                                <a href="kiki_info.html" class="dropdown-item">Kiki</a>
+                                <a href="kiki_info.html#firsts" class="dropdown-item">Kiki's three "firsts"</a>
+                                <a href="kiki_info.html#partners" class="dropdown-item">Kiki's partners</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Studio</a>
+                            <div class="dropdown-menu">
+                                <a href="kiki_studioo.html" class="dropdown-item">Core members</a>
+                                <a href="kiki_studioo.html#secrets" class="dropdown-item">Secrets</a>
+                                <a href="kiki_studioo.html#works" class="dropdown-item">Other works</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reference</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav區end -->
+
+        <!-- 介紹 -->
+        <main class="wrapper">
+            <div class="container">
+                <h2 class="text-center">—Reference Source—</h2>
+
+                <!-- Netflix -->
+                <h3 class="text-center">Netflix</h3>
+                <div class="d-flex justify-content-center" style="margin: 20px 0;">
+                <div class="box">
+                <a href="https://www.netflix.com/tw/title/60027106" target="_blank">
+                    <img class="cover-fit" src="img/netflix.jpg"></a>
+                </div>
+            </div>
+
+                <!-- 維基百科 -->
+                <h3 class="text-center">Wikipedia</h3>
+                <div class="rslist">
+                    <ul>
+                        <li><a href="https://reurl.cc/GEn4jd" target="_blank">魔女宅急便</a></li>
+                        <li><a href="https://reurl.cc/7pK70l" target="_blank">吉卜力工作室</a></li>
+                        <li><a href="https://reurl.cc/1mK3v9" target="_blank">宮崎駿</a></li>
+                        <li><a href="https://reurl.cc/8pD0XM" target="_blank">高畑勳</a></li>
+                        <li><a href="https://reurl.cc/2mKz64" target="_blank">鈴木敏夫</a></li>
+                    </ul>
+                </div>
+
+                <!-- YouTube -->
+                <h3 class="text-center">YouTube</h3>
+                <div class="d-flex justify-content-center" style="margin-top: 30px; margin-bottom: 55px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rgxjg5KGphM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- 回頂端區 -->
+        <div class="backTop" id="backTop">
+            <i class="fas fa-angle-up" aria-hidden="true"></i>
+        </div>
+
+        <!-- Footer區start -->
+        <div class="container">
+            <footer class="fixed-bottom">
+                <p style="margin:0;padding-bottom: 30px;">2022©Kiki's Delivery Service</p>
+            </footer>
+        </div>
+        <!-- Footer區end -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+
+        $("#backTop").click(function () {
+            $("html").animate({
+                scrollTop: 0
+            }, 500)
+        })
+
+        $(window).scroll(function () {
+            let Top = $(this).scrollTop()
+            if (Top >= 20) {
+                $("#backTop").addClass("active")
+            }
+            else {
+                $("#backTop").removeClass("active")
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
